@@ -141,7 +141,7 @@ public class MageApplication extends Application<MageConfiguration> {
         environment.servlets().addServlet("status-servlet", statusServlet).addMapping("/status");
 
         if (generalCfg.isProduction()) {
-            initializeLibrato(environment.metrics(), serverName, monitoringCfg.getLibratoEmail(), monitoringCfg.getLibratoApiToken());
+            //initializeLibrato(environment.metrics(), serverName, monitoringCfg.getLibratoEmail(), monitoringCfg.getLibratoApiToken());
         }
     }
 
